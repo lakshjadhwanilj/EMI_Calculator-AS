@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgLight"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <!--Row 1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:text="Principal ₹"
+            android:textColor="@color/textSecondary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/principal"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:digits="0123456789."
+            android:inputType="number"
+            android:padding="10dp"
+            android:text="0.0"
+            android:textAlignment="center"
+            android:textColor="@color/textPrimary"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <!--Row 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:text="Tenure in years"
+            android:textColor="@color/textSecondary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/tenure"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:digits="0123456789."
+            android:inputType="number"
+            android:padding="10dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/textPrimary"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <!--Row 3-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:text="Rate %"
+            android:textColor="@color/textSecondary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/roi"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:digits="0123456789."
+            android:inputType="number"
+            android:padding="10dp"
+            android:text="0.0"
+            android:textAlignment="center"
+            android:textColor="@color/textPrimary"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <!--Row 4-->
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/orange"
+        android:padding="15dp"
+        android:text="Calculate"
+        android:textColor="@color/textPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/orange" />
+
+    <!--Row 5-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:text="Monthly EMI"
+            android:textColor="@color/textSecondary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/emi"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="₹ 0.0"
+            android:textAlignment="center"
+            android:textColor="@color/textPrimary"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <!--Row 6-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:text="Total Interest"
+            android:textColor="@color/textSecondary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/interest"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="₹ 0.0"
+            android:textAlignment="center"
+            android:textColor="@color/textPrimary"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
